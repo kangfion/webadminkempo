@@ -1,0 +1,27 @@
+<!-- {{ $nomor := 0 }}
+{{ range .anggota }}
+    <tr>
+        {{ $nomor = increment $nomor 1 }}
+        <td>{{ $nomor }}</td>
+        <td>{{ .Name }}</td>
+        <td>{{ .Email }}</td>
+        <td>
+            <button data-id="{{ .Id }}" class="btn btn-danger btn-sm delete-mahasiswa">Delete</button>
+            <button data-id="{{ .Id }}" class="btn btn-warning btn-sm edit-mahasiswa">Edit</button>
+        </td>
+    </tr>
+{{ end }} -->
+
+            {{ $nomor := 0 }}
+            {{ range .anggota }}
+                <tr>
+                    {{ $nomor = increment $nomor 1 }}
+                    <td>{{ $nomor }}</td>
+                    <td>{{ .Name }}</td>
+                    <td>{{ .Email }}</td>
+                    <!-- <td>
+                        <button data-id="{{ .Id }}" class="btn btn-danger btn-sm delete-mahasiswa">Delete</button>
+                        <button data-id="{{ .Id }}" class="btn btn-warning btn-sm edit-mahasiswa">Edit</button>
+                    </td> -->
+                </tr>
+            {{ end }} 
